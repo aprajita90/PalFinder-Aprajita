@@ -20,6 +20,8 @@ angular.module('myApp').controller('privateMessages', function($rootScope, $scop
             createdAt: firebase.database.ServerValue.TIMESTAMP
         });
         console.log('sent message!');
+        $scope.message = "";
+        $scope.target = "";
     }
     $scope.goHome = function () {
         $rootScope.accessProfile = false;
